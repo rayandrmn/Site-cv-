@@ -1,7 +1,7 @@
   body{
     margin: 0;
     padding: 0;
-    background-color:#99CCCC;
+    background-color:#33415c;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -142,25 +142,46 @@ h1{
  }
 
  .nom{
-     color: #1B63C7;
+     color: #979dac;
      font-weight: bolder;
      font-size: 20px;
      line-height: 100px;
       
 
  }
-
- .bio{
-    color: #5b7498;
+ 
+  .bio{
+    color: #979dac;
     font-size: 20px;
     line-height: 50px;
+    transition: 2s;
+ }
 
+ 
+
+
+ #apparition{
+    animation: apparition 2s 1s linear 1;
+}
+@keyframes apparition {
+    0%{
+       opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+ 
+ 
+ .three{
+     color:  #43aa8b;
  }
 
 
 
 
 
- 
 
- 
+
+  
