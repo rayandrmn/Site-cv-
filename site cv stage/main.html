@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 
 
 </head>
@@ -19,9 +22,15 @@
      <div class="contener">
         <h1 class="titre">Welcome</h1>
 
-        <div class="lien"><a id="lien" href="#aboutme">About me</a>  </div>
-        <div class="lien"><a id="works" href="#work">  Works</a></div>
-        <div class="lien">Contact me</div>
+        <div class="lien">
+            <a id="lien" href="#aboutme">About me</a>
+        </div>
+        <div class="lien">
+            <a id="works" href="#work">  Works</a>
+        </div>
+        <div class="lien">
+            <a id="contacts" href="#contact">Contact</a>
+        </div>
     </div>
           <img id="fusee" src="fusee.png" alt="fusee"> 
  
@@ -34,7 +43,12 @@
         </div>
         <div class="contener-aboutme-bot">
             <div class="nom">Hey je suis <span class="gras"> Rayan Derhamoune 😸</span></div>
-            <div class="bio">Un jeune <span class="gras"> développeur</span> web et web mobile  en formation, accro au javascript  <span class="three">Apprentissage de three.js en cours !!</span></div>
+            <div class="bio">Un jeune <span class="gras"> développeur</span> web et web mobile  en formation, accro au javascript  <span class="three">Apprentissage de three.js en cours !!</span>
+            
+                <canvas width="320" class="myCanvas" height="240">
+                    <p>Votre navigateur ne prend pas en charge canvas. Boo hoo!</p>
+                </canvas>
+            </div>
             
              
 
@@ -42,7 +56,26 @@
     </div>
 
      <div id="work" class="contener-works"></div>
-    </div>
+     <div id="contact" class="contener-contact">
+         <form name="monformulaire">
+             <span class="contact-titre">Contactez moi</span>
+             <div class="contener-input" id="nom">
+                <input class="input" id="inputnom" type="text" name="name" placeholder="Nom">
+             </div>
+             <div class="contener-input" id="email">
+                <input class="input" id="inputemail" type="text" name="email" id="inputemail" placeholder="E-mail">
+             </div>
+             <div class="contener-input" id="text" >
+                <textarea class="input" name="message" id="inputtext" placeholder="Votre message"></textarea>
+             </div>
+
+             <button   class="bouton">
+                 <span class="envoyer">envoyer</span>
+             </button>
+
+
+         </form>
+     </div>
     <script src="main.js"></script>
 </body>
 </html>
