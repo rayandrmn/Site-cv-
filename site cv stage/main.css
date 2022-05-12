@@ -106,8 +106,7 @@ h1{
      display: flex;
      justify-content: center;
      align-items: center;
-     border-bottom: solid black;
-      
+       
  }
 
   a{
@@ -183,16 +182,93 @@ h1{
  .contener-works{
     width: 80%;
     height: 100vh;
-    
-    border: solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      justify-content: space-between;
+     
+ }
+
+ .contener-works-top{
+     display: flex;
+     flex-direction: column;
+     width: 80%;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .devweb{
+     width: 50%;
+ }
+
+ .developpeur{
+     font-weight: bolder;
+     color: white;
+     font-size: 25px;
+     line-height: 3;
+ }
+
+ .developpeur-description{
+     color: #979dac;
+     line-height: 2;
+     font-size: 18px;
+ }
+
+ .contener-works-mid{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+ }
+
+ .langue{
+     font-size: 20px;
+     color: #1B63C7;
+     line-height: 3;
+
+ }
+ .langage{
+     font-size: 15px;
+     color: #43aa8b;
+ }
+
+ .contener-works-bot{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+     
+ }
+
+ html{
+      overflow-y: hidden;
+     } 
+
+ .outils{
+    font-size: 20px;
+     color: #1B63C7;
+  }
+
+ li{
+    margin: 20px;
+	padding: 2px 0 2px 20px;
+	list-style: none;
+	background-image: url("tete.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 20px;
+    font-size: 20px;
+    color:#43aa8b ;
  }
 
  .contener-contact{
     width: 80%;
     height: 100vh;
     display: flex;
-    border: solid green;
-     align-items: center;
+      align-items: center;
      justify-content: center;
   }
 
@@ -240,9 +316,7 @@ h1{
 
  }
 
- canvas{
-     border: solid red;
- }
+ 
 
  textarea{
      height: 200px;

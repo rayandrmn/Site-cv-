@@ -14,7 +14,9 @@
         let fuseeposition = 0;
         const planete = document.getElementById("planete");
         let lol = false;
-
+        const nav = document.querySelector(".contener-nav");
+        const boutonNav = document.querySelectorAll(".lien");
+ 
         function Fusee(){
           
 
@@ -66,6 +68,21 @@
                 event.preventDefault();
                 var hash = this.hash;
                 fuseeposition += 200;
+                nav.style.left = "0";
+                nav.style.top = "0";
+                nav.style.position = "fixed";
+                 
+                 
+                console.log(boutonNav);
+
+                for(let bouton of boutonNav){
+                    console.log("qsdsqd")
+                    bouton.firstElementChild.style.color = "white";
+                }
+                
+                
+
+                 
                 fusee.style.top = `${fuseeposition}%`;
                  lol = true;
         
@@ -177,8 +194,59 @@ function apparitionid(){
 
 
 
-var canvas = document.querySelector('.myCanvas');
-var width = canvas.width = 320;
-var height = canvas.height = 240;
+//var canvas = document.querySelector('.myCanvas');
+//var width = canvas.width = 320;
+//var height = canvas.height = 240;
+//var ctx = canvas.getContext("2d");
+//
+//ctx.fillStyle = "rgb(0, 0, 0)";
+//ctx.fillRect(0, 0, width, height);
+//
+//ctx.fillStyle = 'rgb(255, 0, 0';
+//ctx.fillRect(50, 50, 100, 150);
+//
+//ctx.fillStyle = "rgb(0, 255, 0)";
+//ctx.fillRect(75, 75, 100, 100);
+//
+//ctx.fillStyle = 'rgba(255, 0, 255, 0.75)';
+//ctx.fillRect(25, 100, 175, 50);
+//
+//ctx.strokeStyle = "rgb(255, 255, 255)";
+//ctx.strokeRect(25, 25, 175, 200);
+//ctx.lineWidth = 5;
+
+
+//ctx.translate(width/2, height/2);
+//
+//function degToRad(degrees){
+//    return degrees * Math.PI / 180;
+//};
+//
+//function rand(min, max){
+//    return Math.floor(Math.random() * (max-min+1)) + (min);
+//}
+//
+//var length = 255;
+//var moveOffset = 20;
+//
+//for(var i = 0; i < length; i++){
+//   ctx.fillStyle = 'rgba(' + (255-length) + ', 0, ' + (255-length) + ', 0.9)';
+//   ctx.beginPath();
+//   ctx.moveTo(moveOffset, moveOffset);
+//   ctx.lineTo(moveOffset+length, moveOffset);
+//   var triHeight = length/2 * Math.tan(degToRad(60));
+//   ctx.lineTo(moveOffset+(length/2), moveOffset+ triHeight);
+//   ctx.lineTo(moveOffset, moveOffset);
+//   ctx.fill();
+//   
+//   length--;
+//   moveOffset += 0.7;
+//   ctx.rotate(degToRad(5));
+//}
+
+
+
+
+ 
 
         });
