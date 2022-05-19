@@ -343,6 +343,75 @@ h1{
 
 
 
+ @media only screen and (min-width: 500px) {
+    .contener {
+       font-size: 50px;
+       background-color: #b4bacc;
+       width: 100%;
+       height: 100vh;
+    }
+
+    body{
+        background-color: #b4bacc;
+
+    }
+    .contener-aboutme{
+        background-color: #1d3557;
+        width: 40%;
+        margin-top:10% ;
+        font-family: 'Roboto', sans-serif;      }
+
+    .aboutme-contener{
+        background-color: #1d3557;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    .contener-works{
+        width: 50vh;
+        font-family: 'Roboto', sans-serif;
+     }
+     .developpeur{
+         color: #1B63C7;
+         font-weight: bolder;
+     }
+     .developpeur-description{
+         font-size: 25px;
+         width: 100%;
+         font-weight: bolder;
+         color: #03045e;
+         
+     }
+     form{
+         width: 40%;
+     }
+     #work{
+         height: 80vh;
+     }
+     #contact{
+         margin-top: 50%;
+         background-color: #1d3557;
+         width: 100%;
+         font-family: 'Roboto', sans-serif;
+     }
+     .photo{
+         width: 20%;
+     }
+     #lien, #works, #contacts{
+         color: black;
+      }
+      #fusee{
+          width: 10%;
+          }
+     html{
+        overflow-y: scroll;       } 
+  
+  }
+
+
+
+
 
 
 

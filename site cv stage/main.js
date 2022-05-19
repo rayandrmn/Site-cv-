@@ -62,23 +62,34 @@
 
 
         $(function (){
+             
+
+
+            $("#lien, #contacts, #works").on("click", function(event){
+        
+                nav.style.left = "0";
+            nav.style.top = "0";
+            nav.style.position = "fixed";
+             
+             
+            console.log(boutonNav);
+
+            for(let bouton of boutonNav){
+                console.log("qsdsqd")
+                bouton.firstElementChild.style.color = "yellow";
+                bouton.firstElementChild.style.fontSize = "50px";
+            }
+
+                 
+        
+            });
 
             $("#lien").on("click", function(event){
         
                 event.preventDefault();
                 var hash = this.hash;
-                fuseeposition += 200;
-                nav.style.left = "0";
-                nav.style.top = "0";
-                nav.style.position = "fixed";
-                 
-                 
-                console.log(boutonNav);
-
-                for(let bouton of boutonNav){
-                    console.log("qsdsqd")
-                    bouton.firstElementChild.style.color = "white";
-                }
+                fuseeposition = 200;
+                
                 
                 
 
@@ -116,7 +127,7 @@
         
                 event.preventDefault();
                 var hash = this.hash;
-                fuseeposition = 400;
+                fuseeposition = 450;
                 fusee.style.top = `${fuseeposition}%`;
                  lol = true;
         

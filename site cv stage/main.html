@@ -14,6 +14,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -36,24 +40,26 @@
          
           <img id="fusee" src="fusee.png" alt="fusee"> 
  
-
-    <div class="contener-aboutme" id="aboutme">
-        <div class="contener-aboutme-top">
-            <div class="photo">
-                <img src="moi.jpg" alt="photo" id="photo">
+    <div class="aboutme-contener">
+        <div class="contener-aboutme" id="aboutme">
+            <div class="contener-aboutme-top">
+                <div class="photo">
+                    <img src="moi.jpg" alt="photo" id="photo">
+                </div>
             </div>
-        </div>
-        <div class="contener-aboutme-bot">
-            <div class="nom">Hey je suis <span class="gras"> Rayan Derhamoune 😸</span></div>
-            <div class="bio">Un jeune <span class="gras"> développeur</span> web et web mobile  en formation,passionné par les techno du web depuis le début de mon adolescence j'en suis devenu  accro au javascript. <span class="three">Apprentissage de three.js et Canvas en cours !!</span>
-            
+            <div class="contener-aboutme-bot">
+                <div class="nom">Hey je suis <span class="gras"> Rayan Derhamoune 😸</span></div>
+                <div class="bio">Un jeune <span class="gras"> développeur</span> web et web mobile  en formation,passionné par les techno du web depuis le début de mon adolescence j'en suis devenu  accro au javascript. <span class="three">Apprentissage de three.js et Canvas en cours !!</span>
+                
+                     
+                </div>
+                
                  
+    
             </div>
-            
-             
-
         </div>
     </div>
+    
 
      <div id="work" class="contener-works">
          <div class="contener-works-top">
@@ -80,16 +86,17 @@
          </div>
      </div>
      <div id="contact" class="contener-contact">
-         <form name="monformulaire">
+         <form name="monformulaire" action="mail.php" method="post">
              <span class="contact-titre">Contactez moi</span>
              <div class="contener-input" id="nom">
                 <input class="input" id="inputnom" type="text" name="name" placeholder="Nom">
              </div>
              <div class="contener-input" id="email">
-                <input class="input" id="inputemail" type="text" name="email" id="inputemail" placeholder="E-mail">
+                <input class="input" id="inputemail" type="text" name="email" required id="inputemail" placeholder="E-mail">
              </div>
              <div class="contener-input" id="text" >
-                <textarea class="input" name="message" id="inputtext" placeholder="Votre message"></textarea>
+                <textarea  class="input" name="message" required id="inputtext" placeholder="Votre message" ></textarea>
+                <input type="submit"  id="">
              </div>
 
              <button   class="bouton">
