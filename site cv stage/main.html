@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="jeu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -83,6 +84,16 @@
                     <li>Github</li>
                 </ul>
              </div>
+             <h2 id="alert"></h2>
+             
+             <div class="contener-portfolio">
+                 
+                    <div class="score">0</div>
+                    <button id="bouton-jeu">Jouer</button>
+                    <div    class="perso"> <img src="Run(32x32).png" class="frame">  
+                    </div>
+                 
+             </div>
          </div>
      </div>
      <div id="contact" class="contener-contact">
@@ -96,16 +107,17 @@
              </div>
              <div class="contener-input" id="text" >
                 <textarea  class="input" name="message" required id="inputtext" placeholder="Votre message" ></textarea>
-                <input type="submit"  id="">
-             </div>
+              </div>
 
              <button   class="bouton">
-                 <span class="envoyer">envoyer</span>
+                <input type="submit" class="envoyer"  id="spami">
+
              </button>
 
 
          </form>
      </div>
     <script src="main.js"></script>
+    <script src="jeu.js"></script>
 </body>
 </html>

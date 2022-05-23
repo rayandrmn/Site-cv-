@@ -1,0 +1,47 @@
+.perso{
+ 
+    width: 25%;
+    height: 100px;
+    bottom: 0%;
+    left: 0%;
+    position: absolute;
+     background-repeat: no-repeat;
+     overflow: hidden;     
+
+ }
+ .frame{
+     position: absolute;
+     animation:    1s 1s   infinite;
+     height: 100px;
+     left: -30%;
+  }
+  
+
+ .obstacle{
+    width: 10%;
+    height: 50%;
+    position: absolute;
+     background-image: url("rocher.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 0;
+    background-position: bottom;
+ }
+
+ .piece{
+     width: 2%;
+     height: 20px;
+     background-color: yellow;
+     border-radius: 50%;
+     bottom: 10px;
+     position: absolute;
+ }
+
+ .score{
+     position: absolute;
+     top: 0;
+     right: 0;
+     font-size: 100px;
+ }
+
+ 
